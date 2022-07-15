@@ -217,10 +217,12 @@ function breakStatement(numero) {
   var sum = numero
   var array = []
   for (i=0; i<10; i++){
-   sum = sum + 2
-   array.push(sum) 
-   if(sum === i) break; }
- 
+   sum = sum + 2 
+   if(sum === i) break; 
+    else {
+      array.push(sum)
+    }
+  }
    if (i<10){
     return 'Se interrumpió la ejecución' }
     else {
