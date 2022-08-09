@@ -55,7 +55,7 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   nuevoobjeto = {
-    nnombre: nombre,
+    nombre: nombre,
     email: email,
     password: password
   }
@@ -134,7 +134,7 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
   let suma = 0
-  for (let index = 0; index < posts.length; index++) {
+  for (let index = 0; index < usuario.posts.length; index++) {
     suma = suma + usuario.posts[index].likes
   }
   return suma
@@ -152,7 +152,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // Tu código:
   producto.calcularPrecioDescuento = function () {
     let price
-    price = this.precio - (this.precio - this.porcentajeDeDescuento)
+    price = this.precio - (this.precio * this.porcentajeDeDescuento)
     return price
   }
 

@@ -57,8 +57,8 @@ function filter(array) {
   //Tu código:
   let nuevoarray = []
   for (let index = 0; index < array.length; index++) {
-    if (array[index] === "a") {
-      nuevoarray.push(array[i])
+    if (array[index][0] === "a") {
+      nuevoarray.push(array[index])
     }
   }
   return nuevoarray
